@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  font-family: "Inter", "Times New Roman", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#main {
+  overflow-y: auto;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit-icon,
+#delete-icon {
+  height: 30px;
+}
+
+tfoot:last-child td {
+  border-bottom: none;
+  font-weight: bolder;
+}
+
+@media (max-width: 576px) {
+  img {
+    height: 50px;
+  }
+
+  aside {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  aside {
+    height: 100vh;
+  }
+
+  nav {
+    margin-top: 8rem;
+  }
+
+  #logo {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  div div aside {
+    height: fit-content;
+  }
+}
+
+#add-btn{
+  background-color: #4E5282;
+  color: white;
+  border: 3px solid #4E5282;
+  font-weight: bold;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-btn:hover{
+  color: #4E5282;
+  background-color: white;
+}

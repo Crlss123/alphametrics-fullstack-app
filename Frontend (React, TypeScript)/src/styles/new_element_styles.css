@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  font-family: "Inter", "Times New Roman", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#main {
+  overflow-y: auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  img {
+    height: 50px;
+  }
+
+  aside {
+    justify-content: space-between;
+  }
+}
+
+#names,
+#first-lastname,
+#second-lastname,
+#curp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  aside {
+    height: 100vh;
+  }
+
+  nav {
+    margin-top: 8rem;
+  }
+
+  #buttons {
+    margin-top: 200px;
+  }
+
+  #logo {
+    margin-top: 3rem;
+  }
+
+  main {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  div div aside {
+    height: fit-content;
+  }
+
+  #buttons {
+    margin-bottom: 40px;
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+}
+
+#cancel {
+  border-radius: 10px;
+  background-color: #928779;
+}
+
+#submit {
+  border-radius: 10px;
+  background-color: #4e5283;
+}
+
+#buttons button {
+  color: white;
+  font-weight: bold;
+  width: 173px;
+  height: 40px;
+  font-size: 1.2rem;
+  align-items: center;
+}
